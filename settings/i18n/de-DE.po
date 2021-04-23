@@ -1,0 +1,44 @@
+msgid "title"
+msgstr "Einstellungen"
+
+msgid "showDate"
+msgstr "Datum anzeigen"
+
+msgid "showSensors"
+msgstr "HF, AZM, Schritte und Kalorien anzeigen"
+
+msgid "showBattery"
+msgstr "Akku anzeigen"
+
+msgid "about"
+msgstr "Weiteres"
+
+msgid "developer"
+msgstr "Attila Varga"
+
+msgid "product"
+msgstr "Blaue Schönheit"
+
+msgid "copyright"
+msgstr "Copyright 2020, All rights reserved"
+
+msgid "thankYouTitle"
+msgstr "Dankeschön"
+
+msgid "thankYouDescription"
+msgstr "Vielen Dank, dass Sie sich für die Blaue Schönheit entschieden haben!
+
+msgid "donationTitle"
+msgstr "Spenden"
+
+msgid "donationLink"
+msgstr "Attila einen Kaffee spendieren"
+
+msgid "experimental"
+msgstr "Experimentelle Einstellungen"
+
+msgid "autoDisplayMode"
+msgstr "Nur zwischen 20-06 Uhr"
+
+msgid "displayModeNight"
+msgstr "Nachtmodus verwenden"

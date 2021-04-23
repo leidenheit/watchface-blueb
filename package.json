@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.0"
+  },
+  "fitbit": {
+    "appUUID": "8b4cbcfa-e929-4d4b-a891-383282f9d604",
+    "appType": "clockface",
+    "appDisplayName": "Blue Beauty",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity"
+    ],
+    "buildTargets": [
+      "atlas"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Blue Beauty"
+      },
+      "de-DE": {
+        "name": "Blaue Schönheit"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

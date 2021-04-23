@@ -1,0 +1,67 @@
+/*
+ *  Copyright:  Attila Varga, 2020 
+ *  Project:    Watch Face ©BlueBeauty
+ *  Mail:       attila.varga.dev@gmail.com
+ */
+
+.wa-planet { 
+  opacity: 0.3; 
+}
+.clock-hours { 
+  font-family: "Colfax-Bold"; 
+  font-size: 112; 
+  fill: whitesmoke;
+}
+.clock-minutes { 
+  font-family: "Colfax-Bold"; 
+  font-size: 100; 
+  fill: whitesmoke;
+}
+.clock-full { 
+  font-family: "Colfax-Bold"; 
+  font-size: 128; 
+  letter-spacing: -9;
+  fill: whitesmoke;
+}
+.clock-full-night { 
+  font-family: "Colfax-Bold"; 
+  font-size: 128; 
+  letter-spacing: -9;
+  fill: papayawhip;
+}
+.date {
+  font-family: "Colfax-Regular"; 
+  font-size: 24; 
+  letter-spacing: -1;
+  fill: seashell;
+}
+.date-night {
+  font-family: "Colfax-Regular"; 
+  font-size: 24; 
+  letter-spacing: -1;
+  fill: papayawhip;
+}
+.battery-charge-level {
+  font-family: "Colfax-Medium"; 
+  font-size: 24;
+  letter-spacing: -3;
+  fill: seashell;
+}
+.battery-charge-level-night {
+  font-family: "Colfax-Medium"; 
+  font-size: 24;
+  letter-spacing: -3;
+  fill: papayawhip;
+}
+.sensor {
+  font-family: "Colfax-Medium"; 
+  font-size: 28;   
+  letter-spacing: -2;
+  fill: seashell;
+}
+.sensor-night {
+  font-family: "Colfax-Medium"; 
+  font-size: 28;   
+  letter-spacing: -2;
+  fill: papayawhip;
+}

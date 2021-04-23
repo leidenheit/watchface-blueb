@@ -1,0 +1,112 @@
+<!--
+/*
+ *  Copyright:  Attila Varga, 2020 
+ *  Project:    Watch Face ©BlueBeauty
+ *  Mail:       attila.varga.dev@gmail.com
+ */
+-->
+
+<svg viewport-fill="black" >
+  <link rel="stylesheet" href="styles.css" />
+  <!-- space 
+  --> 
+  <image id="space" width="336" height="336" href="space_highlight_2.png"/> 
+
+  <!-- Battery charge level as image
+  -->
+  <image id="batteryIcon" x="275" y="24" href="icons/battery.png" width="20" height="10">
+    <rect id="labelChargeLevel" x="2" y="2" height="6"/>
+  </image>  
+  <!-- date 
+  -->
+  <text class="date" id="labelDate" width="336" x="168" y="56" text-anchor="middle" text-length="25"/> 
+  <!-- clock hours+minutes
+  -->
+  <text class="clock-full" id="labelClockFull" width="336" x="168" y="158" text-anchor="middle" text-length="7" />
+  
+  
+  <!-- planet atmosphere
+  <circle id="planet-border1" cx="167+96" cy="190+72" r="113" fill="white" opacity="1"/>
+ -->  
+  <circle id="planet-border1" cx="167+96" cy="190+72" r="113" fill="white" opacity="0.5"/>
+  <circle id="planet-border1" cx="167+96" cy="190+72" r="112" fill="white" opacity="0.5"/>
+  <circle id="planet-border1" cx="167+96" cy="190+72" r="112" fill="skyblue" opacity="0.3"/>
+  <circle id="planet-border1" cx="167+96" cy="190+72" r="111" fill="blue" opacity="0.2"/>
+
+  <!-- planet
+  -->
+  <mask id="mask-planet">
+    <circle id="masked-planet" cx="168+96" cy="192+72" r="112" fill="black" />
+  </mask> 
+  <svg mask="#mask-planet" fill="black">    
+    <!-- animation earth surface and clouds
+    -->
+    <g id="animGroupBlueBeauty">  
+      <!--
+      <image id="surface1" x="168" y="152" width="364" height="182" href="earth364_with_clouds_4.png">
+        <animate id="animSurface1" attributeName="x" begin="load" from="0" to="364" dur="16" repeatCount="indefinite"/>	
+      </image>
+      <image id="surface2" x="168" y="152" width="364" height="182" href="earth364_with_clouds_4.png">
+        <animate id="animSurface2" attributeName="x" begin="load" from="-364" to="0" dur="16" repeatCount="indefinite"/>	
+      </image>
+      -->
+      <image id="surface1" x="168" y="152" width="364" height="182" href="earth364_with_clouds_4.png">
+        <animate id="animSurface1" attributeName="x" begin="load" from="0" to="364" dur="16" repeatCount="indefinite"/>	
+      </image>
+      <image id="surface2" x="168" y="152" width="364" height="182" href="earth364_with_clouds_4.png">
+        <animate id="animSurface2" attributeName="x" begin="load" from="-364" to="0" dur="16" repeatCount="indefinite"/>	
+      </image>
+      
+      
+      <image id="clouds1" x="168" y="150" width="336" height="168" href="clouds168.png" opacity="0.2">
+        <animate id="animclouds1" attributeName="x" begin="load" from="0" to="336" dur="8" repeatCount="indefinite"/>	
+      </image>
+      <image id="clouds2" x="168" y="150" width="336" height="168" href="clouds168.png" opacity="0.2">
+        <animate id="animclouds2" attributeName="x" begin="load" from="-336" to="0" dur="8"repeatCount="indefinite"/>	
+      </image>
+  	</g> 
+  </svg>
+  
+  <!-- azm
+  -->
+  <g id="azm">
+    <line id="azmSatellitePath" x1="140-90" y1="215" x2="140" y2="215" fill="white" stroke-width="1" opacity="0.3"/>
+    <image id="azmIcon" href="icons/azm_36px.png" x="17" y="191" width="28" height="28" fill="seashell" opacity="0.95" />
+    <text class="sensor" id="labelAzm" x="135" y="211" text-length="6" text-anchor="end"></text> 
+    <circle id="azmSatellite" cx="140" cy="215" r="2" fill="seashell" opacity="0.55"/>
+  </g>
+  
+  <!-- steps
+  -->
+  <g id="steps">
+    <line id="stepsSatellitePath" x1="130-80" y1="250" x2="130" y2="250" fill="white" stroke-width="1" opacity="0.3"/>
+    <image id="stepsIcon" href="icons/steps_36px.png" x="15" y="227" width="28" height="28" fill="seashell" opacity="0.95" />
+    <text class="sensor" id="labelSteps" x="125" y="246" text-length="6" text-anchor="end"></text> 
+    <circle id="stepsSatellite" cx="130" cy="250" r="2" fill="seashell" opacity="0.55"/>
+  </g>
+  <!-- cals
+  -->
+  <g id="cals">
+    <line id="calsSatellitePath" x1="135-78" y1="285" x2="135" y2="285" fill="white" stroke-width="1" opacity="0.3"/>
+    <image id="calsIcon" href="icons/calories_36px.png" x="28" y="259" width="28" height="28" fill="seashell" opacity="0.95" />
+    <text class="sensor" id="labelCals" x="130" y="281" text-length="5" text-anchor="end"></text> 
+    <circle id="calsSatellite" cx="135" cy="285" r="2" fill="seashell" opacity="0.55"/>
+  </g>
+  <!-- heart rate 
+  -->
+  <svg viewport-fill="fb-blue">
+    <defs>
+      <symbol id="heartSymbol">
+        <g id="heartRate">
+          <image id="heartRateIcon" href="icons/heart_rate_36px.png" />
+        </g> 
+      </symbol>
+    </defs>
+    <svg>
+      <line id="heartSatellitePath" x1="140-60" y1="320" x2="140" y2="320" fill="white" stroke-width="1" opacity="0.3"/>
+      <use id="heartRateIconUse" href="#heartSymbol" x="57" y="295" width="28" height="28" fill="seashell" opacity="0.95" />
+      <text class="sensor" id="labelHeartRate" x="135" y="316" text-length="3" text-anchor="end"></text>
+      <circle id="heartSatellite" cx="140" cy="320" r="2" fill="seashell" opacity="0.55"/>
+    </svg>
+  </svg>
+</svg>

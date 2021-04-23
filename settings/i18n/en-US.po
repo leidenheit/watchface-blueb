@@ -1,0 +1,44 @@
+msgid "title"
+msgstr "Settings"
+
+msgid "showDate"
+msgstr "Show Date"
+
+msgid "showSensors"
+msgstr "Show HR, AZM, Steps and Calories"
+
+msgid "showBattery"
+msgstr "Show Battery"
+
+msgid "about"
+msgstr "About"
+
+msgid "developer"
+msgstr "Attila Varga"
+
+msgid "product"
+msgstr "BlueBeauty Clockface"
+
+msgid "copyright"
+msgstr "Copyright 2020, All rights reserved"
+
+msgid "thankYouTitle"
+msgstr "Thank You!"
+
+msgid "thankYouDescription"
+msgstr "Thank you for using BlueBeauty!
+
+msgid "donationTitle"
+msgstr "Donation"
+
+msgid "donationLink"
+msgstr "Buy Attila a Coffee"
+
+msgid "experimental"
+msgstr "Experimental Settings"
+
+msgid "autoDisplayMode"
+msgstr "Mode between 8PM and 6AM"
+
+msgid "displayModeNight"
+msgstr "Use Night Mode"
