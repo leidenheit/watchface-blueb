@@ -4,7 +4,7 @@
 Planet Earth. Animated. Also includes HR, AZM, steps, calories, battery indicators and a night mode. This is a completely free clock face and exclusively for Fitbit Versa 3.
 
 ### How does it look like?
-![Demo Image](https://siasky.net/jABenYEnxTUwLfeZ31sJlBCEdpdBwS28-f02uwIvdHYbpw)
+![Demo Image](https://gallery-assets.fitbit.com/public/NM0kDYJkDLBpCYJmAI7qNL3hC2ZmOHpXCaFmAI.nOYOXD2CaC5FtC./B5CYBaCXBq3hDI.rCXooC2FnAL7rBYBhCqCXBn0_OYNkBIFp@1x.png)
 
 ### Environment
 This watchface was developed with the FitBit Studio IDE and is only compatible with the FitBit Versa 3 Model.
